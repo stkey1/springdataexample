@@ -33,7 +33,10 @@ public class App {
         ApplicationContext applicationContext = SpringApplication.run(App.class, args);
         AddressService addressService= applicationContext.getBean(AddressService.class);
 
-        addressService.addAddress();
+      //  addressService.addAddress();
+
+      //  addressService.findByStreetOrZipCode("Bakirkoy", 34303);
+        addressService.deleteAddress(1L);
 
 
 
